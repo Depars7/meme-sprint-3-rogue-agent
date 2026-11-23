@@ -24,7 +24,7 @@ def caption(d, lines, y, font_size):
     fnt = ImageFont.truetype(FB, font_size)
     for line in lines:
         d.text((SIZE / 2, y), line, font=fnt, fill=(255, 255, 255),
-               anchor="ma", stroke_width=7, stroke_fill=(0, 0, 0))
+               anchor="ma", stroke_width=8, stroke_fill=(0, 0, 0))
         y += int(font_size * 1.18)
     return y
 
