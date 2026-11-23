@@ -52,14 +52,15 @@ def main():
         "Email your boss what you actually think",
         "Delete Mondays from your calendar",
         "Buy a one-way ticket to Bali",
+        "Rename itself to “Boss”",
     ]
-    y = 356
+    y = 348
     for it in items:
-        rr(d, (140, y, 190, y + 50), 10, outline=INK, width=4)
-        d.line((150, y + 25, 162, y + 38), fill=CHK, width=7)
-        d.line((162, y + 38, 182, y + 10), fill=CHK, width=7)
-        d.text((214, y + 25), it, font=f(FR, 35), fill=INK, anchor="lm")
-        y += 84
+        rr(d, (140, y, 188, y + 48), 10, outline=INK, width=4)
+        d.line((149, y + 24, 161, y + 36), fill=CHK, width=7)
+        d.line((161, y + 36, 180, y + 10), fill=CHK, width=7)
+        d.text((212, y + 24), it, font=f(FR, 33), fill=INK, anchor="lm")
+        y += 74
 
     # buttons
     rr(d, (140, 716, 500, 800), 14, fill=BLUE)
